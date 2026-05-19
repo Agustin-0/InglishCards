@@ -15,13 +15,12 @@ export default function Cards(){
     ]
     return(
         <>
-            <section className="flex flex-col items-center">
+            <section className="flex flex-col items-center px-4">
                 {words.map((word) => (
-                    <div key={word.id} className="bg-primary-100 p-8 flex flex-col justify-between items-center rounded-xl
-                                                    min-h-100">
+                    <div key={word.id} className="bg-primary-100 p-8 flex flex-col gap-8 justify-between items-center rounded-xl w-full">
                         <h2 className="bg-secondary-500 rounded-xl text-4xl text-neutral-50 font-bold py-2 px-4">{word.name}</h2>
                         <p className="text-base font-semibold">A house is a construction or building intended to be inhabited. It functions as a space of refuge and protection against weather conditions and the environment.</p>
-                        <ul className="flex gap-4">
+                        <ul className="flex flex-wrap justify-center gap-4">
                             <li className="bg-secondary-500 hover:bg-secondary-300 text-base font-semibold text-neutral-50 py-2 px-2 rounded-xl">
                                 <button>Clue...</button>
                             </li>

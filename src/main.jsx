@@ -21,15 +21,15 @@ const router = createBrowserRouter ([
         element:<LoginRegisterPage />,
       },
       {
-        index:true,
+        path:"/LoginPage",
         element:<LoginPage />,
       },
       {
-        path: "/Levels",
+        path: "/LoginPage/Levels",
         element: <Level />,
       },
       {
-        path: "/Levels/WordsPage",
+        path: "/LoginPage/Levels/WordsPage",
         element: <WordsPage />,
       }
     ]
