@@ -1,13 +1,15 @@
-function mezclar(array){
+
+export default function mezclar(array){
     //Recorre el array de atras hacia adelante
     for (let i = array.length -1; i>0; i--) {
         let j = Math.floor(Math.random() * (i+1));
         [array[i], array[j]] = [array[j], array[i]]
     }
-    console.log(array)
+    return array
+    console.log("se mezclaron")
 } 
 
-mezclar([1,2,3,4,5])
+
 
 /*
 En JavaScript, Math es un objeto global incorporado que proporciona constantes y métodos estáticos para realizar operaciones matemáticas. No se necesita instanciar; se llama directamente escribiendo Math.método(). 

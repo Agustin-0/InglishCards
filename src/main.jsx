@@ -10,11 +10,13 @@ import Level from './components/pages/Levels.jsx'
 import NotFoundPage from './components/pages/NotFoundPage.jsx'
 import WordsPage from './components/pages/WordsPage.jsx'
 import LoginRegisterPage from './components/pages/LoginRegisterPage.jsx'
+import ErrorPage from './components/pages/ErrorPage.jsx'
 
 const router = createBrowserRouter ([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children:[
       {
         index:true,
@@ -43,5 +45,5 @@ const router = createBrowserRouter ([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 )
