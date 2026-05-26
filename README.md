@@ -10,5 +10,30 @@ Me gustaria que haya otro modo en el que se te de 1 palabra en español y 4 opci
 
 Estaria bueno meter audios, de que dicen las palabras.
 
+# Inglish Cards
+
+Una app para apoyar a la memoria en el camino del aprendisaje del idioma ingles!
+Esta app esta pensada para ayudar a memorizar palabras en ingles, en general nos vemos obligados a buscar en el traductor siempre que olvidamos alguna palabra, esta app viene a solucionar eso!
+
+
+
+## Tecnologías
+- JavaScript
+- React
+- tailwindCss
+- auth0
+
+## Estructura del proyecto
+
+
+
+## Funcionalidades
+
+## Variables de entorno
+
+## Próximos pasos
+    refactorizar las rutas del proyecto, separar pages de componets, poner el algoritmo en utils, y la data tambien.
+
+## Autor
 
 

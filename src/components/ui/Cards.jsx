@@ -4,8 +4,9 @@ import { FaArrowRight } from "react-icons/fa6";
 import mezclar from "../../algoritmoKnuth"
 import { words } from "../../data"
 import NotFoundPage from "../pages/NotFoundPage";
+import Spinner from "../utils/Spinner";
 
-export default function Cards(){
+export default function Cards({ level }){
     /*Este componente empieza como un estado inicial "dataMezclada" de [],
     para llenarlo  se llama con un useEffect al algoritmo knuth, la primera vez.
     se setea el resultado en "dataMezclada" y por ultimo se pasa a una card
@@ -18,7 +19,10 @@ export default function Cards(){
     const [definition, setDefinition] = useState(false)
 
     useEffect(() => {
-        setDataMezclada(mezclar(words))
+        {/*tener [level] nos perimite pasar de forma dinamica un objeto, 
+            asi sin importar que nivel elijamos vamos a acceder a un array 
+            diferente. al final words[level] es lo mismo que words.advanced*/}
+        setDataMezclada(mezclar(words[level]))
     },[]) //probemos
 
     const handleindice = () => {
@@ -29,13 +33,14 @@ export default function Cards(){
     es 0 al inicio, por lo para react es undefined y rompe que se debe
     poner una alternativa que es el if en este caso */
     if(dataMezclada.length === 0){
-        return <h1>cargando</h1>
+        return <Spinner />
     }
     /* Este es el famosisimo caso BORDE, si mi array tiene 5 elementos cuado llegue a 5
     ya va a ser invalido y mostrara esto*/
     if(indice >= dataMezclada.length){
         return <NotFoundPage />
     }
+    console.log(level)
     return(
         <>
             <section className="flex flex-col items-center px-4">
@@ -78,6 +83,7 @@ export default function Cards(){
                         {showInglish? "Next word": "siguiente palabra"}
                         <FaArrowRight />
                     </button>
+                    <h1></h1>
                 </section>
         </>
     )
