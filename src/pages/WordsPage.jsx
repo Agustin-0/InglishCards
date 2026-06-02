@@ -1,7 +1,7 @@
-import Container from "../layout/Container";
-import Header from "../layout/Header";
-import Section from "../layout/Section";
-import Cards from "../ui/Cards";
+import Container from "../components/layout/Container";
+import Header from "../components/layout/Header";
+import Section from "../components/layout/Section";
+import Cards from "../components/ui/Cards";
 import { useLocation } from "react-router-dom"
 
 export default function WordsPage(){
@@ -19,13 +19,17 @@ export default function WordsPage(){
     const level = location.state?.level
     return(
         <>
+        <div className="flex flex-col h-screen bg-primary-200">
             <Header />
-            <h1 className="text-center text-4xl font-semibold text-neutral-50">The first word is...</h1>
-            <Section>
-                <Container>
-                    <Cards level={level} />
-                </Container>
-            </Section>
+            <main className="flex-1">
+                <h1 className="text-center text-4xl font-semibold text-neutral-50">The first word is...</h1>
+                <Section>
+                    <Container>
+                        <Cards level={level} />
+                    </Container>
+                </Section>
+            </main>
+        </div>
         </>
     )
 }

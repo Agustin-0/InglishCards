@@ -21,7 +21,7 @@ Esta app esta pensada para ayudar a memorizar palabras en ingles, en general nos
 - JavaScript
 - React
 - tailwindCss
-- auth0
+- ReactRouterProvider
 
 ## Estructura del proyecto
 
@@ -35,5 +35,7 @@ Esta app esta pensada para ayudar a memorizar palabras en ingles, en general nos
     refactorizar las rutas del proyecto, separar pages de componets, poner el algoritmo en utils, y la data tambien.
 
 ## Autor
+
+## Para ver el README en una vista previa pulsar " ctrl + shift + v "
 
 

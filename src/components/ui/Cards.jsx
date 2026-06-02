@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import ButtonCard from "./ButtonCard"
+import ButtonCard from "./Spinner"
 import { FaArrowRight } from "react-icons/fa6";
-import mezclar from "../../algoritmoKnuth"
-import { words } from "../../data"
-import NotFoundPage from "../pages/NotFoundPage";
-import Spinner from "../utils/Spinner";
+import mezclar from "../../utils/algoritmoKnuth"
+import { words } from "../../data/data"
+import NotFoundPage from "../../pages/NotFoundPage";
+import Spinner from "../ui/Spinner";
 
 export default function Cards({ level }){
     /*Este componente empieza como un estado inicial "dataMezclada" de [],
@@ -45,8 +45,9 @@ export default function Cards({ level }){
         <>
             <section className="flex flex-col items-center px-4">
                         <div className="bg-primary-100 p-8 flex flex-col gap-8 justify-between items-center rounded-xl w-full relative">
-                            <h2 className="bg-primary-200 rounded-xl text-4xl text-secondary-500 
-                            font-bold py-2 px-4 absolute -top-7 border-2 border-primary-100">
+                            <h2 className="rounded-xl text-4xl
+                                    bg-primary-200 text-secondary-500 
+                                    font-bold py-2 px-4 absolute -top-7 border-2 border-primary-100">
                                 {showInglish? currentWord.name : currentWord.nameTranslate }
                                 </h2>
 
@@ -58,7 +59,10 @@ export default function Cards({ level }){
                                 <li>
                                     <button 
                                     onClick={() => setClue(prev => !prev)}
-                                    className="bg-secondary-500 hover:bg-secondary-300 text-base font-semibold text-neutral-50 py-2 px-2 rounded-xl focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700">
+                                    className="bg-secondary-500 hover:bg-secondary-300 text-neutral-50
+                                                focus:outline-violet-500 active:bg-violet-700
+                                                focus:outline-2 focus:outline-offset-2
+                                                text-base font-semibold py-2 px-2 rounded-xl">
                                         {showInglish? "Clue" : "Pista"}
                                     </button>
                                 </li>

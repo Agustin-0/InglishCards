@@ -5,7 +5,7 @@
 // a veces fondo distinto
 export default function Section({ children, className = "" }) {
   return (
-    <section className={`py-16 ${className}`}>
+    <section className={`bg-primary-200 py-16 ${className}`}>
       {children}
     </section>
   )

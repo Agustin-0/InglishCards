@@ -1,0 +1,5 @@
+/*
+    aca se supone que vamos a traer las palabras.
+    Creo que seria bueno mezclalas aca tambien o llamar
+    una funcion que las mezcle por separado.
+*/

@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 export default function LoginPage(){
     return(
         <>
-            <section className="px-6 flex flex-col gap-16 pt-4">
+            <section className="bg-primary-200 h-screen px-6 flex flex-col justify-between pt-4">
                 <div>
                     <h3 className="text-lg font-semibold pb-8">Logo</h3>
                     <h1 className="text-2xl font-semibold">Sign in to Inglish Cards</h1>

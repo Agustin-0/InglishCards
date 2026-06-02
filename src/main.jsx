@@ -5,12 +5,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 
 import App from './App.jsx'
-import LoginPage from './components/pages/LoginPage.jsx'
-import Level from './components/pages/Levels.jsx'
-import NotFoundPage from './components/pages/NotFoundPage.jsx'
-import WordsPage from './components/pages/WordsPage.jsx'
-import LoginRegisterPage from './components/pages/LoginRegisterPage.jsx'
-import ErrorPage from './components/pages/ErrorPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
+import Level from './pages/Levels.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
+import WordsPage from './pages/WordsPage.jsx'
+import LoginRegisterPage from './pages/LoginRegisterPage.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 
 const router = createBrowserRouter ([
   {

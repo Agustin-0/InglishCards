@@ -9,7 +9,7 @@
 // padding lateral (px-4)
 export default function Container({ children }) {
   return (
-    <div className="mx-auto max-w-7xl px-4">
+    <div className="bg-primary-200 mx-auto max-w-7xl px-4">
       {children}
     </div>
   )

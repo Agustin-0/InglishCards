@@ -5,13 +5,13 @@ import { IoIosEyeOff } from "react-icons/io";
 export default function LoginRegisterPage(){
     return(
         <>
-         <section className="px-6 flex flex-col gap-16 pt-4 bg">
+         <section className="bg-primary-200 px-6 flex flex-col gap-8 pt-4 bg">
                         <div>
                             <h3 className="text-lg font-semibold pb-8">Logo</h3>
                             <h1 className="text-2xl font-semibold">Sign up to Inglish Cards</h1>
                             <h3 className="text-xl  font-medium pb-6">From developers for developers</h3>
                             <p className="text-sm">if you don't hace an account register</p>
-                            <p className="text-sm">You can <span className=" text-sm text-secondary-300 font-semibold">Register here !</span></p>
+                            <p className="text-sm">You can <span className=" text-sm text-secondary-400 font-semibold">Register here !</span></p>
                         </div>
         
                         <form action="">
