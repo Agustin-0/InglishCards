@@ -18,16 +18,16 @@ const router = createBrowserRouter ([
     element: <App />,
     errorElement: <ErrorPage />,
     children:[
+    //   {
+    //     index:true,
+    //     element:<LoginRegisterPage />,
+    //   },
+    //   {
+    //     path:"/LoginPage",
+    //     element:<LoginPage />,
+    //   },
       {
-        index:true,
-        element:<LoginRegisterPage />,
-      },
-      {
-        path:"/LoginPage",
-        element:<LoginPage />,
-      },
-      {
-        path: "/LoginPage/Levels",
+        index: true,
         element: <Level />,
       },
       {

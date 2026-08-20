@@ -35,7 +35,6 @@ export default function Level() {
     return(
         <>
             <div className="flex flex-col min-h-screen">
-                <Header />
                     <main className="bg-primary-200 flex-1">
                         <Section>
                             <Container>

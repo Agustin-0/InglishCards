@@ -25,3 +25,5 @@ dist-ssr
 
 #notas
 note.md
+.vercel
+.dist
