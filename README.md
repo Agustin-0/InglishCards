@@ -8,7 +8,7 @@ y va a contar con tres botones, pista, Definicion, y la traduccion literal.
 
 Me gustaria que haya otro modo en el que se te de 1 palabra en español y 4 opciones en ingles y tengas que elegir.
 
-Estaria bueno meter audios, de que dicen las palabras.
+Estaria bueno meter audios, para que tedigan las palabras.
 
 # Inglish Cards
 
